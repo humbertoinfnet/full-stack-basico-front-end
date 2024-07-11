@@ -23,11 +23,34 @@ Este projeto é um frontend para o controle de políticas de crédito, permitind
 
 Este projeto não possui requisitos especiais além de um navegador web padrão.
 
-## Como Executar
+## Como Executar o Projeto Local
 
 1. Baixe ou clone o repositório do projeto para o seu computador.
 2. Abra o arquivo `index.html` em seu navegador web.
 3. Interaja com os elementos de seleção para visualizar as políticas, camadas e regras disponíveis.
+
+## Como Executar com Docker
+
+1. Baixe ou clone o repositório do projeto para o seu computador.
+```bash
+# Clonar o projeto
+git clone https://github.com/humbertoinfnet/full-stack-basico-front-end.git
+```
+3. criando imagem docker.
+```bash
+# No diretório raiz do projeto executar o comando
+sudo docker build -t configuracao-politica .
+```
+3. Executando o serviço.
+```bash
+# No diretório raiz do projeto executar o comando
+docker run -p 80:80 configuracao-politica
+```
+4.  Acessando serviço no navegador.
+```bash
+# No navegador acessar a url
+http://localhost:80/index.html
+```
 
 ## Desenvolvimento
 
