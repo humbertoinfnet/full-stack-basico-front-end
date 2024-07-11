@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const button_modal_policy_layer_save = document.getElementById('button-form-policy-layer-save');
-    button_modal_policy_layer_save.addEventListener('click', () => {
-        editPolicyLayer('save')
+    button_modal_policy_layer_save.addEventListener('click', async () => {
+        await editPolicyLayer('save')
             .then(() => {
                 console.log('policy_layer_save com sucesso!');
                 loadLayers(policySelect.value);
